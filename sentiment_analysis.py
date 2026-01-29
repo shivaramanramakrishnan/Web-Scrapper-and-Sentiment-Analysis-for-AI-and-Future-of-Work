@@ -16,7 +16,7 @@ print("=" * 70 + "\n")
 
 # Load cleaned data
 print("Loading cleaned data...")
-df = pd.read_csv('/kaggle/input/cleaned-final/02_cleaned_comments_final.csv')
+df = pd.read_csv('/kaggle/input/cleaned-final/02_cleaned_comments_final.csv')  #Edit the Input file path
 print(f"Starting with: {len(df)} comments\n")
 
 # ============================================================================
@@ -124,3 +124,4 @@ sentiment_by_theme = pd.crosstab(df['theme_name'], df['sentiment'])
 print(sentiment_by_theme)
 
 print("\n  Analysis complete! Ready for visualization.\n")
+
